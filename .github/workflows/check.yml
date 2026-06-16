@@ -8,6 +8,9 @@ on:
 jobs:
   check:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ozora-ticket-bot
     steps:
       - name: Get the code
         uses: actions/checkout@v4
