@@ -127,7 +127,7 @@ def send_whatsapp(text):
 def main():
     # Threshold is fixed at 90 EUR. (You can still override it with an
     # EUR_THRESHOLD secret if you ever want to, but you don't have to.)
-    threshold = int(os.environ.get("EUR_THRESHOLD", "1"))
+    threshold = int(os.environ.get("EUR_THRESHOLD", "85"))
     print(f"Threshold: {threshold} EUR")
 
     try:
